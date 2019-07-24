@@ -1,7 +1,7 @@
 class Student < User
-
-  def new
-    @knowledge = []
+  @knowledge = []
+  def new(knowledge)
+    @knowledge = knowledge
   end
 
   def learn(string)
