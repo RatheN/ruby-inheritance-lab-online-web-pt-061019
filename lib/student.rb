@@ -1,9 +1,9 @@
 class Student < User
-  @knowledge = []
 
-  def new(name)
-    @name = name
-    @knowledge
+  attr_accessor :knowledge
+
+  def new
+    @knowledge = []
   end
 
   def learn(string)
